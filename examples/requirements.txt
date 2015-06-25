@@ -1,0 +1,174 @@
+# Package management + compatibility
+# ----------------------------------
+setuptools==15.2
+six==1.9.0
+wheel==0.24.0
+
+# Misc dependencies
+# -----------------
+django-appconf==0.6  # (dependency of compressor, geoposition, and locking (via staticfiles))
+newrelic==2.50.0.39  # NewRelic Python agent for performance monitoring
+
+# Django + Admin Extensions
+# -------------------------
+-e git+git@github.com:theatlantic/django.git@1.4.14postatl-0.4#egg=django
+-e git+git@github.com:theatlantic/django-grappelli.git@2.4.0#egg=django-grappelli
+-e git+git@github.com:theatlantic/django-ckeditor.git@v4.4.7post-atl-4.04#egg=django-ckeditor
+-e git+git@github.com:theatlantic/django-filebrowser.git@v3.5.7post-atl-1.0.2#egg=django-filebrowser
+-e git+git@github.com:theatlantic/django-form-utils.git@master#egg=django-form-utils
+django-staticfiles==1.2.1  # (dependency of django-locking)
+-e git+git@github.com:theatlantic/django-locking.git@v2.2.14#egg=django-locking
+-e git+git@github.com:theatlantic/django-select2-forms.git@v1.1.19#egg=django-select2-forms
+-e git+git@github.com:theatlantic/django-persistent-messages.git@v0.1post-atl-1.0.1#egg=django-persistent-messages
+-e git+git@github.com:theatlantic/django-nested-admin.git@v2.0.13#egg=django-nested-admin
+
+# Misc Helpers
+# ------------
+-e git+git@github.com:theatlantic/django-atlantic.git@v1.11.51#egg=django-atlantic
+-e git+git@github.com:theatlantic/django-generic-plus.git@v1.2.13#egg=django-generic-plus
+requests==2.5.1
+BeautifulSoup==3.2.1
+docopt==0.4.0  # (dependency of mailchimp)
+mailchimp==2.0.9
+unicodecsv==0.9.4
+requests-oauth==0.4.1
+
+# Task Scheduling
+# ---------------
+amqp==1.4.6
+kombu==3.0.24
+billiard==3.3.0.19
+amqplib==1.0.2
+celery==3.1.17
+django-celery==3.1.16
+-e git+git@github.com:theatlantic/django-celery-utils.git@v1.0.0#egg=django-celery-utils
+
+# Database
+# --------
+South==1.0.2
+-e git+git@github.com:theatlantic/django-mysqlndb-backend.git@v1.0.6#egg=django-mysqlndb-backend
+MySQL-python==1.2.3
+django-multidb-router==0.6
+
+# Caching
+# -------
+-e git+git://github.com/theatlantic/django-cache-machine.git@v0.5#egg=django-cache-machine
+redis==2.10.3
+hiredis==0.1.6
+-e git+git@github.com:theatlantic/django-cachecow.git@v1.0.8#egg=django-cachecow
+-e git+git@github.com:theatlantic/django-edgecast.git@v1.1.2#egg=django-edgecast
+
+
+# Authentication
+# --------------
+pyasn1==0.1.7  # (dependency of python-ldap)
+pyasn1-modules==0.0.5  # (dependency of python-ldap)
+-e git+git@github.com:theatlantic/python-ldap.git@v2.4.11post-atl-1.02#egg=python-ldap
+ply==3.6  # (dependency of python-active-directory)
+dnspython==1.12.0  # (dependency of python-active-directory)
+-e git+git@github.com:theatlantic/python-active-directory.git@v0.9post-atl-1.0.2#egg=python-active-directory
+-e git+git@github.com:theatlantic/django-auth-ldap.git@1.1.4-atldev-0.1#egg=django_auth_ldap
+django-otp==0.2.1
+-e git+git@github.com:theatlantic/django-amc-ldap.git@v1.3.10#egg=django-amc-ldap
+
+# Imaging
+# -------
+Pillow==2.7.0
+python-xmp-toolkit==1.0.2
+-e git+git@github.com:theatlantic/django-cropduster.git@v4.8.23#egg=django-cropduster
+
+# XML / Feeds
+# -----------
+feedparser==5.1.3
+lxml==2.3
+defusedxml==0.4.1
+-e git+git@github.com:theatlantic/django-xml.git@master/1.3#egg=django-xml
+-e git+git@github.com:theatlantic/django-partner-feeds.git@v2.0.13#egg=django-partner-feeds
+djangorestframework==3.0.2
+django-filter==0.8
+
+# JSON
+# ----
+simplejson==3.6.5  # (dependency of jsonutil)
+jsonutil==1.0.3
+
+# Datetime helpers
+# ----------------
+timelib==0.2.2
+pytz==2014.1
+python-dateutil==1.5
+
+# Debugging
+# ---------
+anyjson==0.3.3  # (dependency of raven)
+raven==5.3.1
+
+# TESTING
+# -------
+django-discover-runner==1.0
+django-discover-jenkins==0.1.3
+coverage==3.7.1
+mock==1.0.1
+
+# CMS Applications
+# ----------------
+-e git+git@github.com:theatlantic/django-curation.git@v1.0.23#egg=django-curation
+-e git+git@github.com:theatlantic/django-autosave.git@v0.7.1#egg=django-autosave
+
+# K4
+# --
+-e git+git@github.com:theatlantic/pyk4.git@v2.0.1#egg=pyk4
+-e git+git@github.com:theatlantic/python-hessian.git@v1.0.1#egg=python-hessian
+suds==0.4
+
+# Ads
+# --
+-e git+git@github.com:theatlantic/django-easy-ad.git@v1.9.24#egg=django-easy-ad
+
+# Other...
+# --------
+django-mptt==0.6.1  # (dependency of django-categories)
+-e git+git@github.com:theatlantic/django-categories@1.2.2#egg=django-categories
+-e git+git@github.com:theatlantic/django-statictext@v0.4.1#egg=django-statictext
+-e git+git@github.com:theatlantic/python-socialflow.git@v1.1.0#egg=python-socialflow
+
+# Frontend Packages
+# -------------
+-e git+git@github.com:theatlantic/atlantic-wire.git@v2.1.21#egg=wire
+django-compressor==1.5
+-e git+git://github.com/theatlantic/django-taggit.git@v0.9.2-atl-2.0.4#egg=django-taggit
+-e git+git://github.com/theatlantic/django-contact-form.git@v1.1.1#egg=django-contact-form
+akismet==0.2.0
+-e git+git@github.com:theatlantic/django-phatpages.git@v2.0.0#egg=django-phatpages
+-e git+git@github.com:theatlantic/django-news-sitemaps.git@v1.0.2#egg=django-news-sitemaps
+mimeparse==0.1.3  # (dependency of django-tastypie)
+django-tastypie==0.9.15
+-e git+git@github.com:theatlantic/django-analytics.git@v2.5.13#egg=django-analytics
+-e git+git@github.com:theatlantic/libsass-python.git@v0.7.0post-atl-1.0#egg=libsass
+django-libsass==0.2
+
+# CityLab
+# -------
+-e git+git@github.com:theatlantic/atlantic-citylab.git@v1.1.136#egg=atlantic-citylab
+
+# Video Packages
+# --------------
+httplib2==0.7.3
+-e git+git@github.com:theatlantic/django-admin-mod.git@v1.0.9#egg=django-admin-mod
+-e git+git@github.com:theatlantic/theatlantic-video.git@v1.2.18#egg=theatlantic-video
+-e git+git@github.com:theatlantic/vimeo.py.git@v0.2.0#egg=vimeo
+
+# TheAtlantic.com
+# --------------
+-e git+git@github.com:theatlantic/theatlantic-django.git@v2.0.168#egg=theatlantic-django
+-e git+git@github.com:theatlantic/theatlantic-photo.git@v2.0.11#egg=theatlantic-photo
+
+# AtlanticLive
+# ------------
+-e git+git@github.com:theatlantic/atlantic-live.git@v2.0.5#egg=atlantic-live
+
+# Mapping
+# -------
+-e git+git@github.com:theatlantic/django-geoposition.git@v0.2.2post-atl-1.4#egg=django-geoposition
+Shapely==1.4.0
+ModestMaps==1.4.6
